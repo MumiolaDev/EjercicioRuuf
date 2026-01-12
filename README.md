@@ -1,22 +1,22 @@
 # Tarea Dev Junior - Ruuf
 
 Postulante: Diego Passalacqua
+Correo: dorlandopg@gmail.com
 ## 🛠️ Problema
 
 El problema a resolver consiste en encontrar la máxima cantidad de rectángulos de dimensiones "a" y "b" (paneles solares) que caben dentro de un rectángulo de dimensiones "x" e "y" (techo).
 
-
-### Solución en Python
+### Ejecutar en Python
+Para ejecutar la solución solo basta correr el archivo main.py utilizando python3
 ```bash
 cd python
 python3 main.py
 ```
 
-## 📝 Tu Solución
-
-Deja acá el link a tu video explicando tu solución con tus palabras
-
----
+## 📝 Solución
+Para realizar este ejercicio primero tuve que considerar las restricciones que hacen mas simple el problema.
+En primer lugar la forma del techo y los paneles es rectangular y en segundo, los paneles a colocar son todos del mismo tamaño. 
+Con esto en cuenta lo primero que hago es revisar si es que el panel entra al menos 1 vez en cualquiera de los dos sentidos, de lo contrario la respuesta es 0.
 
 ## 💰 Bonus (Opcional)
 
