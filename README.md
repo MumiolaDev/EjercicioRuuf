@@ -26,9 +26,6 @@ probar celda por celda si se puede poner el panel
 La función que cuenta la cantidad de paneles intenta poner el panel con la orientacion que viene, si no puede 
 intenta  rotando el panel 90 grados.
 
-Un panel, al ser colocado actualiza el techo generado para que las celdas ocupadas ya no se encuentren
-disponibles, eso provoca que pasemos por celdas que sabemos que estan ocupadas luego de poner un panel, para techos muy, muy grandes esto podria ser costoso.
-
 ### Bonus Implementado
 
 Para ver una demostración del bonus los invito a igresar al jupyter notebook donde ustedes mismos pueden cargar sus imágenes
@@ -48,6 +45,9 @@ Un triángulo puede ser inscrito con rectángulos y el algoritmo sigue igual
 
 Para el bonus tuve que cambiar la entrada de la funcion calculate_panels para que en lugar de ancho y alto
 se utilize una imagen con la forma del techo, de esta forma puedo probar diversas configuraciones y es muy fácil de visualizar.
+
+Un panel, al ser colocado actualiza el techo generado para que las celdas ocupadas ya no se encuentren
+disponibles, eso provoca que pasemos por celdas que sabemos que estan ocupadas luego de poner un panel, para techos muy, muy grandes esto podria ser costoso.
 
 Por otro lado, cuando el techo no es rectangular, al utilizar fuerza bruta no me aseguro a encontrar la máxima cantidad o bien, la forma mas óptima de colocar los paneles.
 Para valores pequeños esto no deberia ser perceptible, aun no encuentro un caso donde pueda ver una mejor configuración pero a medida que la forma
