@@ -50,11 +50,11 @@ def calculate_panels(panel_width: int, panel_height: int,
         for j in range(roof_height):
 
             try:
-                techo = colocar_panel(techo, panel_width, panel_height,  i*panel_width, j*panel_height, n)
+                techo = colocar_panel(techo, panel_width, panel_height,  i, j, n)
                 n+=1
             except:
                 try:
-                    techo = colocar_panel(techo, panel_height, panel_width,  i*panel_height, j*panel_width, n)
+                    techo = colocar_panel(techo, panel_height, panel_width,  i, j, n)
                     n += 1
                 except:
                     pass
