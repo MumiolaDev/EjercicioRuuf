@@ -8,7 +8,6 @@ import numpy as np
 def generar_techo(panel_width: int, panel_height: int, ):
     return np.zeros((panel_width,panel_height))
 
-n_paneles = 0
 def colocar_panel(techo : np.ndarray, panel_width, panel_height, start_x = 0, start_y = 0, panel_ind=0) :
     tmp = techo.copy()
 
@@ -26,22 +25,6 @@ def colocar_panel(techo : np.ndarray, panel_width, panel_height, start_x = 0, st
 
 def calculate_panels(panel_width: int, panel_height: int, 
                     roof_width: int, roof_height: int) -> int:
-    
-    
-    # Primero chequeo si el panel cabe en el techo al menos 1 vez probando el panel en ambos sentidos
-    a = math.floor(roof_width/panel_width)
-    b = math.floor(roof_width/panel_height)
-    if a == 0 and b == 0:
-        # si el panel no cabe a lo ancho en ninguno de los sentidos no cabe
-        # print('no cabe')
-        return 0
-
-    c = math.floor(roof_height/panel_width)
-    d = math.floor(roof_height/panel_height)
-    if c == 0 and d == 0:
-        # si el panel no cabe a lo largo en ninguno de los sentidos no cabe
-        # print('no cabe')
-        return 0
 
     techo = generar_techo(roof_width,roof_height)
     n = 0
