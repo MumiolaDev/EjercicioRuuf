@@ -54,7 +54,7 @@ def calculate_panels(panel_width: int, panel_height: int,
                 n+=1
             except:
                 try:
-                    techo = colocar_panel(techo, panel_height, panel_width,  i*panel_width, j*panel_height, n)
+                    techo = colocar_panel(techo, panel_height, panel_width,  i*panel_height, j*panel_width, n)
                     n += 1
                 except:
                     pass
